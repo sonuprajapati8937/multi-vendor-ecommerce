@@ -38,7 +38,7 @@ const Orders = () => {
                     <option value="all">--order status---</option>
                     <option value="placed">Placed</option>
                     <option value="pending">Pending</option>
-                    <option value="cancelled">Cod</option>
+                    <option value="cod">Cod</option>
                     <option value="warehouse">Warehouse</option>
                 </select>
             </div>
@@ -60,7 +60,7 @@ const Orders = () => {
                             {
                                 myOrders.map((o, i) => <tr key={i} className='bg-white border-b'>
                                     <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>{o._id}</td>
-                                    <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>${o.price}</td>
+                                    <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>₹{o.price}</td>
                                     <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>{o.payment_status}</td>
                                     <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>{o.delivery_status}</td>
                                     <td scope='row' className='px-6 py-4'>
